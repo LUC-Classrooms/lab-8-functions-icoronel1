@@ -23,12 +23,16 @@ function draw() {
 
 function myShape(x, y, s, a) {
   // make this function more interesting
+  var w, h
+  w = 50;
+  h = 50;
+
   push(); // make a separate layer
   translate(x, y); // move the origin point
   scale(s);
   rotate(a);
   fill("pink")
-  ellipse(0, 0, 50, 50); // simple ellipse at the translated origin (0,0)
+  ellipse(0, 0, w, h); // simple ellipse at the translated origin (0,0)
   arc(20, 8, 20, 10, PI + HALF_PI, HALF_PI) // right arm
   arc(-20, 8, 20, 10, HALF_PI, PI + HALF_PI) // left arm
   fill("red")
